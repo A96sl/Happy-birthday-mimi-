@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Cake Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Order Your Special Birthday Cake</h1>
+        <form id="cakeOrderForm" action="/order" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="flavor">Select Cake Flavor:</label>
+            <select id="flavor" name="flavor" required>
+                <option value="vanilla">Vanilla</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="red_velvet">Red Velvet</option>
+                <option value="carrot">Carrot</option>
+            </select>
+
+            <label for="message">Message on Cake:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Order Cake</button>
+        </form>
+        <div id="responseMessage"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
